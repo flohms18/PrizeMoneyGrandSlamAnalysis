@@ -3,5 +3,5 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('tennis_pay.csv')
 
-for i in df['year']:
-    print(f"in {i}, the prize money was equal to {df['year']}")
+for index, df in df.iterrows():
+    print(f"In {df['year']}, the prize money was equal to {df['wimbledon_women']}")
