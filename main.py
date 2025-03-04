@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('tennis_pay.csv')
+df = df.iloc[::-1]
 
 df['year'] = df['year'].astype(str)
 
