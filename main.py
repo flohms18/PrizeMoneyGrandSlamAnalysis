@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('tennis_pay.csv')
 
-for index, df in df.iterrows():
-    print(f"In {df['year']}, the prize money was equal to {df['wimbledon_men']}")
-    
+df['year'] = df['year'].astype(str)
+
+df.plot(kind="bar", x="year", y="wimbledon_women", legend=False)
+
+plt.show()
+
