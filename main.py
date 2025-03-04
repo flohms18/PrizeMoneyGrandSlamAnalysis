@@ -3,4 +3,5 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('tennis_pay.csv')
 
-print(df.info())
+for i in df['year']:
+    print(df['wimbledon_women'])
