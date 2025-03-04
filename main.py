@@ -3,4 +3,4 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('tennis_pay.csv')
 
-print(df)
+print(df.info())
